@@ -20,7 +20,7 @@ gem 'rubocop-rspec', '~> 2.15.0'
 # Workaround for cc-test-reporter with SimpleCov 0.18.
 # Stop upgrading SimpleCov until the following issue will be resolved.
 # https://github.com/codeclimate/test-reporter/issues/418
-gem 'simplecov', '~> 0.10', '< 0.18'
+gem 'simplecov', '~> 0.10', '< 0.22.1'
 gem 'stackprof', platform: :mri
 gem 'test-queue'
 gem 'yard', '~> 0.9'
