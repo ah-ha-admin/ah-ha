@@ -23,7 +23,7 @@ def install(self, spec, prefix):
     make('install')
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
 
     - name: Configure CMake
  

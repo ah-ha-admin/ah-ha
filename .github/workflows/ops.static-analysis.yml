@@ -15,7 +15,7 @@ jobs:
         ]
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
 
       - name: toolchain
         uses: actions-rs/toolchain@v1
@@ -46,7 +46,7 @@ jobs:
   autofix:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
 
       - run: cargo clippy --fix
       - run: cargo fmt

@@ -70,7 +70,7 @@ jobs:
           echo "TMPDIR=$env:RUNNER_TEMP" >> $GITHUB_ENV
           git config --system core.autocrlf false
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
       - name: set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -90,7 +90,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
       - name: set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -109,7 +109,7 @@ jobs:
     runs-on: ubuntu-latest
     name: RSpec 4
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
       - name: Use latest RSpec 4 from `4-0-dev` branch
         run: |
           sed -e "/'rspec', '~> 3/d" -i Gemfile
@@ -152,7 +152,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v7
 
     # If running on a self-hosted runner, check it meets the requirements
     # listed at https://github.com/ruby/setup-ruby#using-self-hosted-runners

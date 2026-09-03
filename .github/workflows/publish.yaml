@@ -24,7 +24,7 @@ jobs:
 
       - name: action/checkout
 
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
 
       - name: NPM install
 

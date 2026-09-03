@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           # Full git history is needed to get a proper list of changed files within `super-linter`
           fetch-depth: 1
@@ -40,7 +40,7 @@ jobs:
   autofix:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
 
       # Upgrade to the latest Python syntax with https://github.com/asottile/pyupgrade
       - uses: install-pinned/pyupgrade@af7d65f31bddb01097a24da6c8fb694441f51cba
@@ -77,7 +77,7 @@ jobs:
   autofix:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v3
         with:
           node-version: 16
